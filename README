@@ -6,14 +6,15 @@ from libxcb to allow reuse by other projects, such as additional
 language bindings, protocol dissectors, or documentation generators.
 
 Build requirements:
-  cygwin-1.5.22-1
+  cygwin-1.5.25-15
   autoconf2.5-2.61-1
-  automake1.9-1.9.6-2
+  automake1.10-1.10.1-1
   binutils-20060817-1
-  cygport-0.3.7-1
-  gawk-3.1.5-4
-  libxml2-2.6.30-1
+  cygport-0.3.13-1
+  gawk-3.1.6-1
+  libxml2-2.6.32-1
   make-3.81-1
+  python-2.5.2-3
   sed-4.1.5-2
 
 Canonical website:
@@ -25,27 +26,44 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack xcb-proto-1.1-X-src.tar.bz2
+  unpack xcb-proto-1.2-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./xcb-proto-1.1-X.cygport all
+  cygport ./xcb-proto-1.2-X.cygport all
 
 This will create:
-  /usr/src/xcb-proto-1.1-X-src.tar.bz2
-  /usr/src/xcb-proto-1.1-X.tar.bz2
+  /usr/src/xcb-proto-1.2-X-src.tar.bz2
+  /usr/src/xcb-proto-1.2-X.tar.bz2
 
 -------------------------------------------
 
 Files included in the binary package:
 
   /usr/lib/pkgconfig/xcb-proto.pc
-  /usr/share/doc/Cygwin/xcb-proto-1.1.README
-  /usr/share/doc/xcb-proto-1.1/COPYING
-  /usr/share/doc/xcb-proto-1.1/INSTALL
-  /usr/share/doc/xcb-proto-1.1/NEWS
-  /usr/share/doc/xcb-proto-1.1/README
-  /usr/share/doc/xcb-proto-1.1/TODO
+  /usr/lib/python2.5/site-packages/xcbgen/__init__.py
+  /usr/lib/python2.5/site-packages/xcbgen/__init__.pyc
+  /usr/lib/python2.5/site-packages/xcbgen/__init__.pyo
+  /usr/lib/python2.5/site-packages/xcbgen/error.py
+  /usr/lib/python2.5/site-packages/xcbgen/error.pyc
+  /usr/lib/python2.5/site-packages/xcbgen/error.pyo
+  /usr/lib/python2.5/site-packages/xcbgen/expr.py
+  /usr/lib/python2.5/site-packages/xcbgen/expr.pyc
+  /usr/lib/python2.5/site-packages/xcbgen/expr.pyo
+  /usr/lib/python2.5/site-packages/xcbgen/matcher.py
+  /usr/lib/python2.5/site-packages/xcbgen/matcher.pyc
+  /usr/lib/python2.5/site-packages/xcbgen/matcher.pyo
+  /usr/lib/python2.5/site-packages/xcbgen/state.py
+  /usr/lib/python2.5/site-packages/xcbgen/state.pyc
+  /usr/lib/python2.5/site-packages/xcbgen/state.pyo
+  /usr/lib/python2.5/site-packages/xcbgen/xtypes.py
+  /usr/lib/python2.5/site-packages/xcbgen/xtypes.pyc
+  /usr/lib/python2.5/site-packages/xcbgen/xtypes.pyo
+  /usr/share/doc/xcb-proto-1.2/COPYING
+  /usr/share/doc/xcb-proto-1.2/INSTALL
+  /usr/share/doc/xcb-proto-1.2/NEWS
+  /usr/share/doc/xcb-proto-1.2/README
+  /usr/share/doc/xcb-proto-1.2/TODO
   /usr/share/xcb/bigreq.xml
   /usr/share/xcb/composite.xml
   /usr/share/xcb/damage.xml
@@ -65,8 +83,10 @@ Files included in the binary package:
   /usr/share/xcb/xf86dri.xml
   /usr/share/xcb/xfixes.xml
   /usr/share/xcb/xinerama.xml
+  /usr/share/xcb/xinput.xml
   /usr/share/xcb/xprint.xml
   /usr/share/xcb/xproto.xml
+  /usr/share/xcb/xselinux.xml
   /usr/share/xcb/xtest.xml
   /usr/share/xcb/xv.xml
   /usr/share/xcb/xvmc.xml
@@ -74,6 +94,9 @@ Files included in the binary package:
 ------------------
 
 Port Notes:
+
+----- version 1.2-1 -----
+Version bump.
 
 ----- version 1.1-1 -----
 Version bump.

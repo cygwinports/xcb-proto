@@ -1,4 +1,5 @@
 category: X11
+requires: python libxml2
 sdesc: "X Protocol C-Language Bindings (XML headers)"
 ldesc: "xcb-proto provides the XML-XCB protocol descriptions that libxcb
 uses to generate the majority of its code and API. We provide them
