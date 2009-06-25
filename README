@@ -6,15 +6,15 @@ from libxcb to allow reuse by other projects, such as additional
 language bindings, protocol dissectors, or documentation generators.
 
 Build requirements:
-  cygwin-1.5.25-15
-  autoconf2.5-2.61-1
-  automake1.10-1.10.1-2
+  cygwin-1.7.0-50
+  autoconf2.5-2.63-10
+  automake1.10-1.10.2-10
   binutils-20080624-2
-  cygport-0.4.4-1
-  gawk-3.1.6-1
-  libxml2-2.7.2-1
-  make-3.81-1
-  python-2.5.4-1
+  cygport-0.9.7-1
+  gawk-3.1.6-2
+  libxml2-2.7.3-10
+  make-3.81-2
+  python-2.5.4-10
   sed-4.1.5-2
 
 Canonical website:
@@ -59,11 +59,10 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/xcbgen/xtypes.py
   /usr/lib/python2.5/site-packages/xcbgen/xtypes.pyc
   /usr/lib/python2.5/site-packages/xcbgen/xtypes.pyo
-  /usr/share/doc/xcb-proto-1.4/COPYING
-  /usr/share/doc/xcb-proto-1.4/INSTALL
-  /usr/share/doc/xcb-proto-1.4/NEWS
-  /usr/share/doc/xcb-proto-1.4/README
-  /usr/share/doc/xcb-proto-1.4/TODO
+  /usr/share/doc/xcb-proto/COPYING
+  /usr/share/doc/xcb-proto/NEWS
+  /usr/share/doc/xcb-proto/README
+  /usr/share/doc/xcb-proto/TODO
   /usr/share/xcb/bigreq.xml
   /usr/share/xcb/composite.xml
   /usr/share/xcb/damage.xml
@@ -94,6 +93,9 @@ Files included in the binary package:
 ------------------
 
 Port Notes:
+
+----- version 1.5-1 -----
+Version bump.
 
 ----- version 1.4-1 -----
 Version bump.
