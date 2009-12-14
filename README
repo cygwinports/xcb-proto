@@ -6,13 +6,13 @@ from libxcb to allow reuse by other projects, such as additional
 language bindings, protocol dissectors, or documentation generators.
 
 Build requirements:
-  cygwin-1.7.0-50
+  cygwin-1.7.0-67
   autoconf2.5-2.63-10
-  automake1.10-1.10.2-10
-  binutils-20080624-2
-  cygport-0.9.7-1
-  gawk-3.1.6-2
-  libxml2-2.7.3-10
+  automake1.11-1.11-10
+  binutils-2.19.51-1
+  cygport-0.9.10-1
+  gawk-3.1.7-1
+  libxml2-2.7.4-1
   make-3.81-2
   python-2.5.4-10
   sed-4.1.5-2
@@ -26,73 +26,22 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack xcb-proto-1.4-X-src.tar.bz2
+  unpack xcb-proto-1.6-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./xcb-proto-1.4-X.cygport all
+  cygport ./xcb-proto-1.6-X.cygport all
 
 This will create:
-  /usr/src/xcb-proto-1.4-X-src.tar.bz2
-  /usr/src/xcb-proto-1.4-X.tar.bz2
+  /usr/src/xcb-proto-1.6-X-src.tar.bz2
+  /usr/src/xcb-proto-1.6-X.tar.bz2
 
 -------------------------------------------
 
-Files included in the binary package:
-
-  /usr/lib/pkgconfig/xcb-proto.pc
-  /usr/lib/python2.5/site-packages/xcbgen/__init__.py
-  /usr/lib/python2.5/site-packages/xcbgen/__init__.pyc
-  /usr/lib/python2.5/site-packages/xcbgen/__init__.pyo
-  /usr/lib/python2.5/site-packages/xcbgen/error.py
-  /usr/lib/python2.5/site-packages/xcbgen/error.pyc
-  /usr/lib/python2.5/site-packages/xcbgen/error.pyo
-  /usr/lib/python2.5/site-packages/xcbgen/expr.py
-  /usr/lib/python2.5/site-packages/xcbgen/expr.pyc
-  /usr/lib/python2.5/site-packages/xcbgen/expr.pyo
-  /usr/lib/python2.5/site-packages/xcbgen/matcher.py
-  /usr/lib/python2.5/site-packages/xcbgen/matcher.pyc
-  /usr/lib/python2.5/site-packages/xcbgen/matcher.pyo
-  /usr/lib/python2.5/site-packages/xcbgen/state.py
-  /usr/lib/python2.5/site-packages/xcbgen/state.pyc
-  /usr/lib/python2.5/site-packages/xcbgen/state.pyo
-  /usr/lib/python2.5/site-packages/xcbgen/xtypes.py
-  /usr/lib/python2.5/site-packages/xcbgen/xtypes.pyc
-  /usr/lib/python2.5/site-packages/xcbgen/xtypes.pyo
-  /usr/share/doc/xcb-proto/COPYING
-  /usr/share/doc/xcb-proto/NEWS
-  /usr/share/doc/xcb-proto/README
-  /usr/share/doc/xcb-proto/TODO
-  /usr/share/xcb/bigreq.xml
-  /usr/share/xcb/composite.xml
-  /usr/share/xcb/damage.xml
-  /usr/share/xcb/dpms.xml
-  /usr/share/xcb/glx.xml
-  /usr/share/xcb/randr.xml
-  /usr/share/xcb/record.xml
-  /usr/share/xcb/render.xml
-  /usr/share/xcb/res.xml
-  /usr/share/xcb/screensaver.xml
-  /usr/share/xcb/shape.xml
-  /usr/share/xcb/shm.xml
-  /usr/share/xcb/sync.xml
-  /usr/share/xcb/xc_misc.xml
-  /usr/share/xcb/xcb.xsd
-  /usr/share/xcb/xevie.xml
-  /usr/share/xcb/xf86dri.xml
-  /usr/share/xcb/xfixes.xml
-  /usr/share/xcb/xinerama.xml
-  /usr/share/xcb/xinput.xml
-  /usr/share/xcb/xprint.xml
-  /usr/share/xcb/xproto.xml
-  /usr/share/xcb/xselinux.xml
-  /usr/share/xcb/xtest.xml
-  /usr/share/xcb/xv.xml
-  /usr/share/xcb/xvmc.xml
-
-------------------
-
 Port Notes:
+
+----- version 1.6-1 -----
+Version bump.
 
 ----- version 1.5-1 -----
 Version bump.
