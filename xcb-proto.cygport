@@ -2,7 +2,7 @@ inherit python
 
 NAME="xcb-proto"
 VERSION=1.8
-RELEASE=1
+RELEASE=2
 CATEGORY="X11"
 SUMMARY="X Protocol C-Language Binding protocol descriptions"
 DESCRIPTION="xcb-proto provides the XML-XCB protocol descriptions that libxcb
