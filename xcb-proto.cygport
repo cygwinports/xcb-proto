@@ -1,7 +1,7 @@
 inherit python
 
 NAME="xcb-proto"
-VERSION=1.9
+VERSION=1.10
 RELEASE=1
 CATEGORY="X11"
 SUMMARY="X Protocol C-Language Binding protocol descriptions"
